@@ -1,0 +1,34 @@
+index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedJobs - Hospital Careers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav><h1>MedJobs</h1></nav>
+    </header>
+
+    <main id="job-board">
+        <!-- Job Card Component -->
+        <article class="job-card">
+            <h2>Registered Nurse (RN) - ICU</h2>
+            <p>City General Hospital | Full-time</p>
+            <button class="apply-btn" onclick="openPaymentModal()">Apply Now</button>
+        </article>
+    </main>
+
+    <!-- Hidden Payment Modal -->
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <h3>Application Fee: $25.00</h3>
+            <p>Secure payment required to submit your application.</p>
+            <!-- Integrate Stripe/PayPal Element here -->
+            <button id="pay-button">Pay & Submit</button>
+        </div>
+    </div>
+</body>
+</html>
